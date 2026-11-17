@@ -18,5 +18,5 @@ export const company = {
     name: "Cloudflare, Inc.",
     address: "101 Townsend St, San Francisco, CA 94107, USA",
   },
-  updated: { hu: "2026. november 16.", en: "16 November 2026" },
+  updated: { hu: "2026. november 17.", en: "17 November 2026" },
 };

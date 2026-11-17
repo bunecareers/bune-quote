@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Script from "next/script";
 import { Inter, Source_Serif_4 } from "next/font/google";
 import { hasLocale, locales } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
@@ -68,6 +69,14 @@ export default async function RootLayout({
     >
       <body className="min-h-screen">
         {children}
+        {/* Cloudflare Web Analytics: cookieless, aggregate visit statistics (see the privacy notice). */}
+        {process.env.NODE_ENV === "production" && (
+          <Script
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            data-cf-beacon='{"token": "fa3198b7ed5845e78f7a35661ed88409"}'
+            strategy="afterInteractive"
+          />
+        )}
       </body>
     </html>
   );

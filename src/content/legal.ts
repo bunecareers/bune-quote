@@ -61,13 +61,17 @@ const hu: Record<LegalDocId, LegalDoc> = {
         ],
       },
       {
-        heading: "4. Sütik",
-        paragraphs: ["A weboldal nem helyez el sütiket, és nem használ látogatókövető vagy hirdetési eszközöket."],
+        heading: "4. Sütik és látogatottsági statisztika",
+        paragraphs: [
+          "A weboldal nem helyez el sütiket, és nem használ hirdetési vagy remarketing eszközöket.",
+          "A látogatottság méréséhez a Cloudflare Web Analytics szolgáltatást használjuk. Ez összesített statisztikát készít arról, hogy mely oldalakat nézik meg, honnan érkeznek a látogatók (hivatkozó oldal, ország), milyen böngészőt és eszköztípust használnak, és milyen gyorsan töltődik be az oldal. Nem használ sütit vagy a böngészőben tárolt egyéb azonosítót, nem követi a látogatót más weboldalakon, és nem készít egyéni profilt. Az IP-címet a statisztikához nem tároljuk.",
+          "Jogalap: jogos érdek a weboldal használatának megértésében és fejlesztésében (GDPR 6. cikk (1) f) pont).",
+        ],
       },
       {
         heading: "5. Adatfeldolgozók",
         items: [
-          `${c.host.name} – tárhelyszolgáltatás és e-mailek kézbesítése (USA), az ajánlatkérések tárolása (EU-s adattárolás)`,
+          `${c.host.name} – tárhelyszolgáltatás, e-mailek kézbesítése és látogatottsági statisztika (USA), az ajánlatkérések tárolása (EU-s adattárolás)`,
         ],
         paragraphs: [
           "Az Egyesült Királyságon és az Európai Gazdasági Térségen kívülre történő adattovábbítás megfelelőségi döntés (például az EU–USA adatvédelmi keretrendszer és annak brit kiegészítése) vagy az erre elfogadott általános szerződési feltételek és a brit adattovábbítási megállapodás alapján történik.",
@@ -193,12 +197,16 @@ const en: Record<LegalDocId, LegalDoc> = {
         ],
       },
       {
-        heading: "4. Cookies",
-        paragraphs: ["The website sets no cookies and uses no visitor tracking or advertising tools."],
+        heading: "4. Cookies and visitor statistics",
+        paragraphs: [
+          "The website sets no cookies and uses no advertising or remarketing tools.",
+          "We use Cloudflare Web Analytics to measure visits. It produces aggregate statistics on which pages are viewed, where visitors come from (referring site, country), which browser and device type they use, and how fast the pages load. It uses no cookies or other identifiers stored in the browser, does not track visitors across other websites and builds no individual profiles. IP addresses are not stored for these statistics.",
+          "Legal basis: legitimate interest in understanding and improving how the website is used (GDPR Art. 6(1)(f)).",
+        ],
       },
       {
         heading: "5. Processors",
-        items: [`${c.host.name}: hosting and email delivery (USA), storage of offer requests (EU data storage)`],
+        items: [`${c.host.name}: hosting, email delivery and visitor statistics (USA), storage of offer requests (EU data storage)`],
         paragraphs: [
           "Transfers outside the United Kingdom and the European Economic Area are based on an adequacy decision (such as the EU–US Data Privacy Framework and its UK Extension) or on the applicable standard contractual clauses and UK international data transfer agreement.",
         ],
