@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Fraunces, Inter } from "next/font/google";
+import { Inter, Source_Serif_4 } from "next/font/google";
 import { hasLocale, locales } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
 import { ogLocale, siteUrl } from "@/lib/seo";
@@ -11,8 +11,8 @@ const inter = Inter({
   subsets: ["latin", "latin-ext"],
 });
 
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
+const serif = Source_Serif_4({
+  variable: "--font-serif",
   subsets: ["latin", "latin-ext"],
 });
 
@@ -64,7 +64,7 @@ export default async function RootLayout({
   return (
     <html
       lang={lang}
-      className={`${inter.variable} ${fraunces.variable} antialiased`}
+      className={`${inter.variable} ${serif.variable} antialiased`}
     >
       <body className="min-h-screen">
         {children}

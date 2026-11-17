@@ -53,7 +53,7 @@
   --color-panel-ink: var(--panel-ink);
   --color-panel-accent: var(--panel-accent);
   --font-sans: var(--font-inter);
-  --font-display: var(--font-fraunces);
+  --font-display: var(--font-serif);
 }
 
 html {

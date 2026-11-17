@@ -58,12 +58,12 @@ export const IntegrationIcon = ({ index, className }: IconProps & { index: numbe
 // Incoming channels (email, chat, PDF or photo) flow into the agent, which checks
 // the catalogue/ERP and produces a draft quote ready for approval.
 export function FlowIllustration({ className = "" }: IconProps) {
-  const tile = "fill-surface stroke-line";
-  const bar = "fill-line";
+  const tile = "fill-surface stroke-muted/60";
+  const bar = "fill-muted/45";
   return (
     <svg viewBox="0 0 960 220" className={`h-auto w-full ${className}`} aria-hidden="true" fill="none">
       {/* Connectors */}
-      <g className="stroke-line" strokeWidth="2" strokeDasharray="6 6">
+      <g className="stroke-muted/70" strokeWidth="2" strokeDasharray="6 6">
         <path d="M170 54C270 54 270 110 366 110" />
         <path d="M170 114H366" />
         <path d="M170 174C270 174 270 110 366 110" />
@@ -74,7 +74,7 @@ export function FlowIllustration({ className = "" }: IconProps) {
       </g>
 
       {/* Email */}
-      <rect x="40" y="28" width="130" height="52" rx="12" className={tile} strokeWidth="1.5" />
+      <rect x="40" y="28" width="130" height="52" rx="12" className={tile} strokeWidth="2" />
       <g className="stroke-accent" strokeWidth="2" strokeLinejoin="round">
         <rect x="56" y="42" width="30" height="22" rx="3" />
         <path d="m57 44 14 10 14-10" />
@@ -83,13 +83,13 @@ export function FlowIllustration({ className = "" }: IconProps) {
       <rect x="98" y="57" width="36" height="6" rx="3" className={bar} />
 
       {/* Chat */}
-      <rect x="40" y="88" width="130" height="52" rx="12" className={tile} strokeWidth="1.5" />
+      <rect x="40" y="88" width="130" height="52" rx="12" className={tile} strokeWidth="2" />
       <path d="M56 104a6 6 0 0 1 6-6h18a6 6 0 0 1 6 6v8a6 6 0 0 1-6 6H67l-7 6v-6.5a6 6 0 0 1-4-5.5z" className="stroke-accent" strokeWidth="2" strokeLinejoin="round" />
       <rect x="98" y="105" width="50" height="6" rx="3" className={bar} />
       <rect x="98" y="117" width="30" height="6" rx="3" className={bar} />
 
       {/* PDF or photo of a handwritten list */}
-      <rect x="40" y="148" width="130" height="52" rx="12" className={tile} strokeWidth="1.5" />
+      <rect x="40" y="148" width="130" height="52" rx="12" className={tile} strokeWidth="2" />
       <g className="stroke-accent" strokeWidth="2" strokeLinejoin="round">
         <path d="M60 160h14l8 8v20H60z" />
         <path d="M74 160v8h8" />
@@ -105,17 +105,17 @@ export function FlowIllustration({ className = "" }: IconProps) {
       <path d="M420 84c3 15 11 23 26 26-15 3-23 11-26 26-3-15-11-23-26-26 15-3 23-11 26-26z" fill="white" />
 
       {/* Catalogue / ERP */}
-      <g className={tile} strokeWidth="1.5">
+      <g className={tile} strokeWidth="2">
         <path d="M576 78v64c0 6.6 19.7 12 44 12s44-5.4 44-12V78" />
         <ellipse cx="620" cy="78" rx="44" ry="12" />
       </g>
-      <g className="stroke-line" strokeWidth="1.5">
+      <g className="stroke-muted/60" strokeWidth="1.5">
         <path d="M576 100c0 6.6 19.7 12 44 12s44-5.4 44-12" />
         <path d="M576 121c0 6.6 19.7 12 44 12s44-5.4 44-12" />
       </g>
 
       {/* Draft quote, approved */}
-      <rect x="760" y="36" width="160" height="148" rx="14" className={tile} strokeWidth="1.5" />
+      <rect x="760" y="36" width="160" height="148" rx="14" className={tile} strokeWidth="2" />
       <rect x="760.75" y="36.75" width="158.5" height="30" rx="13.5" className="fill-accent-soft" />
       <rect x="776" y="47" width="60" height="8" rx="4" className="fill-accent" />
       {[84, 106, 128].map((y) => (
