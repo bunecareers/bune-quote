@@ -27,7 +27,7 @@
     }
   ],
   "vars": {
-    "MAIL_FROM": "hello@buneautomation.com"
+    "MAIL_FROM": "support@bune.business"
   },
   "observability": {
     "enabled": true

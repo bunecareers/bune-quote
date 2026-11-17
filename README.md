@@ -28,7 +28,7 @@ Always use the npm scripts above rather than plain `wrangler dev` or `wrangler d
 `src/app/api/lead/route.ts` stores every request in Cloudflare D1, then emails a notification to `LEAD_NOTIFY_EMAIL` and a confirmation to the visitor. A failed email never loses a request.
 
 - The D1 database `bune-automation-leads` is **shared with buneautomation.com**. Rows from this site have `kind = 'rfq'` and `"site": "bunequote"` in `payload`.
-- Emails are sent from `MAIL_FROM` (`wrangler.jsonc`), for now `hello@buneautomation.com`, which is already set up for the Cloudflare Email Service.
+- Emails are sent from `MAIL_FROM` (`wrangler.jsonc`), `support@bune.business`. The bune.business domain must be set up as a sending domain in the Cloudflare Email Service.
 - Local table: `npm run db:migrate:local`
 
 List this site's requests:
