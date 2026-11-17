@@ -1,0 +1,371 @@
+{
+  "meta": {
+    "title": "Bune Quote – AI quote and order processing for distributors",
+    "description": "From customer email to accurate quote: an AI agent that processes RFQs and purchase orders, checks them against your catalogue and ERP, and prepares them for approval. A Bune Automation speciality."
+  },
+  "nav": {
+    "how": "How it works",
+    "example": "Example",
+    "pilot": "Pilot",
+    "faq": "FAQ",
+    "cta": "Request an offer",
+    "language": "Language"
+  },
+  "brand": {
+    "by": "a Bune Automation speciality"
+  },
+  "hero": {
+    "eyebrow": "For industrial distributors and manufacturers",
+    "title": "From customer email to accurate quote.",
+    "titleAccent": "In minutes, with your approval.",
+    "subtitle": "Our AI agent reads incoming RFQs and purchase orders, whether they arrive by email or chat (WhatsApp, Messenger, Viber), including attached PDFs, photos and spreadsheets. It checks them against your product catalogue and ERP and puts a ready quote draft in front of your team. You review, approve, and the system sends.",
+    "ctaPrimary": "Request an offer",
+    "ctaSecondary": "See an example",
+    "points": [
+      "Nothing goes out without approval",
+      "Works with your existing systems",
+      "A measurable 30-day pilot"
+    ],
+    "card": {
+      "inbox": "Sales inbox",
+      "new": "New RFQ",
+      "from": "Example Engineering Ltd.",
+      "subject": "Quote – bearings, bolts",
+      "steps": [
+        "Recognised: request for quote",
+        "3 line items extracted from email and PDF",
+        "Checked against catalogue and stock",
+        "1 question flagged for review"
+      ],
+      "ready": "Quote draft ready",
+      "waiting": "Awaiting approval"
+    }
+  },
+  "problem": {
+    "eyebrow": "The problem",
+    "title": "Processing quote requests by hand costs time, money and orders",
+    "subtitle": "Incoming requests are never uniform: free text, scanned purchase orders, spreadsheets, a chat photo of a handwritten list, product descriptions instead of part numbers. So most of the work is still manual.",
+    "items": [
+      {
+        "title": "Slow replies",
+        "text": "Whoever quotes later often loses the order. With emails queuing up, turnaround is measured in hours, sometimes days."
+      },
+      {
+        "title": "Manual data entry",
+        "text": "Experienced staff spend their time looking up part numbers, copying quantities and typing orders into the ERP."
+      },
+      {
+        "title": "Costly mistakes",
+        "text": "A mistyped quantity or a wrong part number means complaints, returns and unhappy customers."
+      },
+      {
+        "title": "Missed enquiries",
+        "text": "In a busy shared inbox it is easy to overlook a request, and nobody measures it."
+      }
+    ]
+  },
+  "how": {
+    "eyebrow": "How it works",
+    "title": "It handles the whole process, not just a summary",
+    "subtitle": "The agent prepares every step from the incoming email to the system update. The decision always stays with your team.",
+    "steps": [
+      {
+        "title": "Watches your channels",
+        "text": "Your shared inbox and, on request, your company's business chat accounts. It recognises whether a message is an RFQ, a purchase order, a complaint or a general question."
+      },
+      {
+        "title": "Reads the attachments",
+        "text": "Extracts part numbers, quantities, delivery dates and customer details from the email or chat message, PDFs, scanned documents, photos and spreadsheets."
+      },
+      {
+        "title": "Checks your systems",
+        "text": "Finds the products in your catalogue and checks prices, stock and the customer's previous orders in your CRM and ERP."
+      },
+      {
+        "title": "Flags open questions",
+        "text": "Highlights missing or conflicting information, such as an unclear unit of measure or a product it cannot identify."
+      },
+      {
+        "title": "Prepares the quote",
+        "text": "Drafts the quotation or order entry and writes the reply to the customer."
+      },
+      {
+        "title": "Updates after approval",
+        "text": "Your colleague reviews and approves. Then the CRM and ERP are updated and the reply goes out, with every step logged."
+      }
+    ]
+  },
+  "example": {
+    "eyebrow": "Before and after",
+    "title": "An everyday RFQ, as the agent sees it",
+    "subtitle": "On the left, the incoming email, written the way customers really write. On the right, the draft your colleague sees a few minutes later.",
+    "note": "Illustrative example with fictional company and product data.",
+    "email": {
+      "label": "Incoming email",
+      "from": "Peter Smith · Example Engineering Ltd.",
+      "subject": "quote pls",
+      "body": "Hi,\n\nCould you quote the following:\n– 40 pcs 6205 2RS bearing\n– 2 boxes M10x40 socket head screws, stainless\n– 25 more of the seals from last time\n\nNeed them by Thursday, usual site.\nDrawing of the seal attached.\n\nThanks, Peter",
+      "attachment": "seal_drawing.pdf"
+    },
+    "draft": {
+      "label": "Quote draft",
+      "status": "Awaiting approval",
+      "customer": "Example Engineering Ltd. · deliver to: Leeds site (customer record)",
+      "columns": [
+        "Item",
+        "Part no.",
+        "Qty",
+        "Unit price"
+      ],
+      "rows": [
+        {
+          "item": "Deep groove ball bearing 6205-2RS",
+          "sku": "CS-6205-2RS",
+          "qty": "40 pcs",
+          "price": "€6.20",
+          "source": "email"
+        },
+        {
+          "item": "Socket head screw DIN 912 M10×40 A2",
+          "sku": "CSV-912-1040-A2",
+          "qty": "2 boxes",
+          "price": "€47.50",
+          "source": "email",
+          "flag": true
+        },
+        {
+          "item": "O-ring 45×3 NBR",
+          "sku": "OG-4503-NBR",
+          "qty": "25 pcs",
+          "price": "€0.95",
+          "source": "previous order + PDF"
+        }
+      ],
+      "checksTitle": "Checks by the agent",
+      "checks": [
+        {
+          "ok": true,
+          "text": "All three items in stock, Thursday delivery is possible"
+        },
+        {
+          "ok": true,
+          "text": "\"Seals from last time\" matched to the September order; the drawing agrees"
+        },
+        {
+          "ok": false,
+          "text": "To confirm: \"2 boxes\" = 2 × 100 pcs? The reply asks the customer."
+        }
+      ],
+      "approve": "Approve and send",
+      "edit": "Edit"
+    }
+  },
+  "control": {
+    "eyebrow": "You stay in control",
+    "title": "Controlled automation, not a black box",
+    "subtitle": "We do not promise fully autonomous order processing. The agent prepares, people decide. That makes it easier to trust, test and roll out.",
+    "items": [
+      {
+        "title": "Mandatory approval",
+        "text": "No quote or order is sent or entered into the ERP until a colleague approves it."
+      },
+      {
+        "title": "Visible uncertainty",
+        "text": "The agent shows what it is unsure about and where each value came from: the email, the PDF or a previous order."
+      },
+      {
+        "title": "Full audit trail",
+        "text": "Every step, correction and approval can be traced: who approved what, and when."
+      },
+      {
+        "title": "Measurable results",
+        "text": "We continuously measure processing time, correction rate and requests handled, so the results show in numbers."
+      }
+    ]
+  },
+  "audience": {
+    "eyebrow": "Who it is for",
+    "title": "It helps where there are many requests and few standard formats",
+    "profileTitle": "Typically companies with",
+    "profile": [
+      "10–100 employees",
+      "two or three or more people handling quotes and orders",
+      "a shared sales inbox or business chat account where orders arrive",
+      "frequent PDF and spreadsheet attachments",
+      "an existing ERP, CRM or accounting system",
+      "no in-house AI engineering team"
+    ],
+    "sectorsTitle": "Typical sectors",
+    "sectors": [
+      "Industrial parts distributors",
+      "Electrical and plumbing wholesalers",
+      "Building material suppliers",
+      "Equipment and machinery distributors",
+      "Packaging manufacturers",
+      "Custom fabrication businesses"
+    ]
+  },
+  "integrations": {
+    "eyebrow": "Integrations",
+    "title": "Built on your existing systems, nothing to replace",
+    "subtitle": "Where there is an API, we use it. Where there is not, we start with database access or an export and import route.",
+    "items": [
+      {
+        "title": "Email",
+        "text": "Microsoft 365 / Outlook, Google Workspace / Gmail, other IMAP mailboxes"
+      },
+      {
+        "title": "Chat",
+        "text": "WhatsApp Business, Facebook Messenger, Viber Business, through your company's official business account"
+      },
+      {
+        "title": "ERP and accounting",
+        "text": "Common SME ERPs and custom systems via API, database or export"
+      },
+      {
+        "title": "CRM",
+        "text": "Customer records, contacts, previous quotes and orders"
+      },
+      {
+        "title": "Documents",
+        "text": "PDF, scanned orders, Excel and CSV, photos of handwritten lists, technical drawings"
+      }
+    ]
+  },
+  "pilot": {
+    "eyebrow": "Getting started",
+    "title": "A 30-day pilot with one inbox and one workflow",
+    "subtitle": "Not open-ended consulting. A tightly scoped pilot with success criteria agreed up front, on real emails.",
+    "includesTitle": "What it includes",
+    "includes": [
+      "A review of your current process and a baseline: how long a quote takes today",
+      "Automation of one inbox and one workflow (RFQs or purchase orders)",
+      "Connection to your product catalogue and ERP, read-only at first",
+      "An approval screen for your team",
+      "Weekly check-ins and a final report with measured results"
+    ],
+    "targetsTitle": "Targets we agree together",
+    "targets": [
+      {
+        "value": "−50%",
+        "label": "processing time to first reply"
+      },
+      {
+        "value": "85–90%",
+        "label": "accurate structured data on standard requests"
+      },
+      {
+        "value": "0",
+        "label": "quotes or orders sent without approval"
+      },
+      {
+        "value": "100%",
+        "label": "steps logged, fully traceable"
+      }
+    ],
+    "note": "Targets start from the baseline measured before the pilot and are measured the same way at the end.",
+    "cta": "Request a pilot offer"
+  },
+  "security": {
+    "eyebrow": "Data security",
+    "title": "Your data stays yours",
+    "items": [
+      {
+        "title": "EU data handling, GDPR",
+        "text": "Data is stored in the European Union, handled under the GDPR, and covered by a data processing agreement."
+      },
+      {
+        "title": "No model training",
+        "text": "Your emails and documents are not used to train models, by us or by the AI providers we use."
+      },
+      {
+        "title": "Least privilege",
+        "text": "The agent only accesses the inboxes and systems the task needs. Writing to the ERP is a separately approved step."
+      },
+      {
+        "title": "Human oversight",
+        "text": "Approval-based operation and a full audit trail follow the human oversight principles of the EU AI Act."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "q": "Do we need to replace our existing systems?",
+        "a": "No. The agent connects to your existing inbox, catalogue, CRM and ERP. For older systems without an API, we start with database access or an export and import route."
+      },
+      {
+        "q": "What happens if the AI makes a mistake?",
+        "a": "Nothing is sent or entered without approval. The agent flags what it is unsure about and your colleague can correct it. We measure corrections and use them to improve the system."
+      },
+      {
+        "q": "Can it handle free-text requests without part numbers?",
+        "a": "Yes, that is its main strength. It uses product descriptions, the customer's own names for items and previous orders to identify the right product, and asks when it is not sure."
+      },
+      {
+        "q": "Can it handle orders that arrive by chat?",
+        "a": "Yes, if they arrive on your company's official business account (WhatsApp Business, Facebook Messenger, Viber Business). It processes the text and photographed lists just like emails, and after approval the reply goes back in the same channel. We do not connect to conversations on employees' personal phones; it is worth moving those to a shared business account."
+      },
+      {
+        "q": "Which languages can it process?",
+        "a": "English and Hungarian, and German on request. The reply draft is written in the customer's language."
+      },
+      {
+        "q": "How long does it take to get started?",
+        "a": "The pilot runs for 30 days with one inbox and one workflow. After a successful pilot we extend it to more workflows and switch on writing to the ERP."
+      },
+      {
+        "q": "How much does it cost?",
+        "a": "Every company has different systems and volumes, so after a short review we give you an individual, fixed-price offer for the pilot."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Request an offer",
+    "title": "Let's see how much time it could save you",
+    "subtitle": "Tell us briefly how you handle quote requests today. We will get back to you within one business day to arrange a short call.",
+    "direct": "Prefer email?",
+    "name": "Name",
+    "email": "Work email",
+    "company": "Company",
+    "phone": "Phone",
+    "size": "Company size",
+    "sizes": {
+      "s": "1–9 people",
+      "m": "10–49 people",
+      "l": "50–99 people",
+      "xl": "100+ people"
+    },
+    "volume": "Monthly RFQs and orders",
+    "volumes": {
+      "unknown": "Not sure",
+      "lt50": "Under 50",
+      "50-200": "50–200",
+      "200-1000": "200–1,000",
+      "gt1000": "Over 1,000"
+    },
+    "systems": "Systems you use",
+    "systemsPlaceholder": "e.g. Outlook, WhatsApp Business, SAP Business One, in-house ERP, Excel…",
+    "message": "Message",
+    "messagePlaceholder": "How do you handle quote requests today? What is the biggest pain?",
+    "consent": "I agree to my data being processed to respond to this request.",
+    "submit": "Send request",
+    "sending": "Sending…",
+    "success": "Thank you! We received your request and will get back to you within one business day.",
+    "error": "Sending failed. Please try again or email us."
+  },
+  "footer": {
+    "tagline": "AI quote and order processing for industrial distributors and manufacturers.",
+    "partOf": "A Bune Automation speciality",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "imprint": "Imprint",
+    "rights": "All rights reserved."
+  },
+  "legal": {
+    "back": "Back to the home page",
+    "updated": "Last updated"
+  }
+}

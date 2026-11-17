@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+/* Same Bune family base as buneautomation.com, with an industrial orange
+   accent instead of indigo. */
+:root {
+  --bg: #faf8f4;
+  --surface: #ffffff;
+  --surface-2: #f3f0ea;
+  --ink: #14161c;
+  --muted: #5d6270;
+  --line: #e6e1d8;
+  --accent: #c2410c;
+  --accent-ink: #ffffff;
+  --accent-soft: #fdeee4;
+  --positive: #0f7a55;
+  --negative: #b91c1c;
+  /* Always-dark panel (pilot section) and its accent. */
+  --panel: #14161c;
+  --panel-ink: #f1efe9;
+  --panel-accent: #fb923c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0e0f13;
+    --surface: #16181e;
+    --surface-2: #1c1f26;
+    --ink: #f1efe9;
+    --muted: #9a9ea8;
+    --line: #2a2d35;
+    --accent: #fb923c;
+    --accent-ink: #0e0f13;
+    --accent-soft: #2e1d12;
+    --positive: #34d399;
+    --negative: #f87171;
+    --panel: #1c1f26;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-positive: var(--positive);
+  --color-negative: var(--negative);
+  --color-panel: var(--panel);
+  --color-panel-ink: var(--panel-ink);
+  --color-panel-accent: var(--panel-accent);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-fraunces);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

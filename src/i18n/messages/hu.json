@@ -1,0 +1,371 @@
+{
+  "meta": {
+    "title": "Bune Quote – AI-alapú ajánlat- és rendelésfeldolgozás disztribútoroknak",
+    "description": "Az ügyfél e-mailjétől a pontos árajánlatig: AI agent, amely feldolgozza az ajánlatkéréseket és rendeléseket, egyezteti a katalógussal és az ERP-vel, majd jóváhagyásra előkészíti. A Bune Automation szakterülete."
+  },
+  "nav": {
+    "how": "Hogyan működik",
+    "example": "Példa",
+    "pilot": "Pilot",
+    "faq": "GYIK",
+    "cta": "Ajánlatkérés",
+    "language": "Nyelv"
+  },
+  "brand": {
+    "by": "a Bune Automation szakterülete"
+  },
+  "hero": {
+    "eyebrow": "Ipari disztribútoroknak és gyártóknak",
+    "title": "Az ügyfél e-mailjétől a pontos árajánlatig.",
+    "titleAccent": "Percek alatt, az Ön jóváhagyásával.",
+    "subtitle": "AI agentünk elolvassa a beérkező ajánlatkéréseket és rendeléseket, akár e-mailben, akár chaten (WhatsApp, Messenger, Viber) érkeznek, a csatolt PDF-ekkel, fotókkal és táblázatokkal együtt. Egyezteti őket a termékkatalógussal és az ERP-vel, majd kész ajánlattervezetet tesz kollégája elé. Ön ellenőriz, jóváhagy, és a rendszer küld.",
+    "ctaPrimary": "Kérjen ajánlatot",
+    "ctaSecondary": "Nézze meg egy példán",
+    "points": [
+      "Semmi nem megy ki jóváhagyás nélkül",
+      "Meglévő rendszereivel működik",
+      "30 napos, mérhető pilot"
+    ],
+    "card": {
+      "inbox": "Értékesítési postafiók",
+      "new": "Új ajánlatkérés",
+      "from": "Példa Gépészet Kft.",
+      "subject": "Árajánlat – csapágyak, csavarok",
+      "steps": [
+        "Felismerve: ajánlatkérés",
+        "3 tétel kinyerve a levélből és a PDF-ből",
+        "Egyeztetve a katalógussal és a készlettel",
+        "1 kérdés jelölve ellenőrzésre"
+      ],
+      "ready": "Ajánlattervezet kész",
+      "waiting": "Jóváhagyásra vár"
+    }
+  },
+  "problem": {
+    "eyebrow": "A probléma",
+    "title": "Az ajánlatkérések kézi feldolgozása pénzbe és megrendelésekbe kerül",
+    "subtitle": "A beérkező kérések nem egységesek: szabad szöveg, szkennelt rendelés, Excel-tábla, chaten küldött fotó egy kézzel írt listáról, cikkszám helyett termékleírás. Ezért a munka nagy része ma is kézi.",
+    "items": [
+      {
+        "title": "Lassú válasz",
+        "text": "Aki később küldi az ajánlatot, gyakran lemarad a megrendelésről. A sorban álló levelek miatt az átfutás órákban, néha napokban mérhető."
+      },
+      {
+        "title": "Kézi adatrögzítés",
+        "text": "Tapasztalt kollégák töltik az idejüket cikkszámok keresésével, mennyiségek másolásával és a rendelések ERP-be gépelésével."
+      },
+      {
+        "title": "Drága hibák",
+        "text": "Egy elírt mennyiség vagy rossz cikkszám reklamációt, visszárut és elégedetlen ügyfelet jelent."
+      },
+      {
+        "title": "Elvesző megkeresések",
+        "text": "Egy zsúfolt közös postafiókban könnyű elsiklani egy kérés felett, és ezt senki nem méri."
+      }
+    ]
+  },
+  "how": {
+    "eyebrow": "Hogyan működik",
+    "title": "A teljes folyamatot végigviszi, nem csak összefoglal",
+    "subtitle": "Az agent a beérkező levéltől a rendszer frissítéséig minden lépést előkészít. A döntés mindig a kollégájánál marad.",
+    "steps": [
+      {
+        "title": "Figyeli a beérkező csatornákat",
+        "text": "A közös postafiókot és igény szerint a cég üzleti chat-fiókjait is. Felismeri, hogy az üzenet ajánlatkérés, megrendelés, reklamáció vagy általános kérdés."
+      },
+      {
+        "title": "Elolvassa a csatolmányokat",
+        "text": "Kinyeri a cikkszámokat, mennyiségeket, határidőket és ügyféladatokat a levélből vagy chatüzenetből, a PDF-ekből, a szkennelt dokumentumokból, a fotókból és az Excel-táblákból."
+      },
+      {
+        "title": "Egyeztet a rendszereivel",
+        "text": "Megkeresi a termékeket a katalógusban, ellenőrzi az árakat, a készletet és az ügyfél korábbi rendeléseit a CRM-ben és az ERP-ben."
+      },
+      {
+        "title": "Jelöli a kérdéses pontokat",
+        "text": "Kiemeli a hiányzó vagy ellentmondó adatokat, például egy bizonytalan mértékegységet vagy egy nem azonosítható terméket."
+      },
+      {
+        "title": "Előkészíti az ajánlatot",
+        "text": "Elkészíti az ajánlattervezetet vagy a rendelésrögzítést, és megírja az ügyfélnek szóló válaszlevél piszkozatát."
+      },
+      {
+        "title": "Jóváhagyás után frissít",
+        "text": "Kollégája ellenőrzi és jóváhagyja. Ezután frissül a CRM és az ERP, a válasz kimegy, minden lépés naplózva."
+      }
+    ]
+  },
+  "example": {
+    "eyebrow": "Előtte és utána",
+    "title": "Egy hétköznapi ajánlatkérés, ahogy az agent látja",
+    "subtitle": "Balra a beérkező levél, ahogy az ügyfelek valójában írnak. Jobbra a tervezet, amely néhány perc múlva a kollégája előtt van.",
+    "note": "Szemléltető példa, kitalált cég- és termékadatokkal.",
+    "email": {
+      "label": "Beérkező levél",
+      "from": "Kovács Péter · Példa Gépészet Kft.",
+      "subject": "árajánlat kérés",
+      "body": "Sziasztok!\n\nKérnék árat az alábbiakra:\n– 40 db 6205 2RS csapágy\n– 2 doboz M10x40 imbuszcsavar, rozsdamentes\n– a múltkori tömítésből még 25 db\n\nCsütörtökig kellene, a szokott telephelyre.\nA tömítés rajzát csatoltam.\n\nKöszi, Péter",
+      "attachment": "tomites_rajz.pdf"
+    },
+    "draft": {
+      "label": "Ajánlattervezet",
+      "status": "Jóváhagyásra vár",
+      "customer": "Példa Gépészet Kft. · szállítás: győri telephely (ügyféltörzs)",
+      "columns": [
+        "Tétel",
+        "Cikkszám",
+        "Menny.",
+        "Egységár"
+      ],
+      "rows": [
+        {
+          "item": "Mélyhornyú golyóscsapágy 6205-2RS",
+          "sku": "CS-6205-2RS",
+          "qty": "40 db",
+          "price": "2 450 Ft",
+          "source": "levél"
+        },
+        {
+          "item": "Imbuszcsavar DIN 912 M10×40 A2",
+          "sku": "CSV-912-1040-A2",
+          "qty": "2 doboz",
+          "price": "18 900 Ft",
+          "source": "levél",
+          "flag": true
+        },
+        {
+          "item": "O-gyűrű 45×3 NBR",
+          "sku": "OG-4503-NBR",
+          "qty": "25 db",
+          "price": "380 Ft",
+          "source": "korábbi rendelés + PDF"
+        }
+      ],
+      "checksTitle": "Az agent ellenőrzései",
+      "checks": [
+        {
+          "ok": true,
+          "text": "Mindhárom tétel raktáron, csütörtöki szállítás teljesíthető"
+        },
+        {
+          "ok": true,
+          "text": "„A múltkori tömítés” azonosítva a szeptemberi rendelésből, a rajz egyezik"
+        },
+        {
+          "ok": false,
+          "text": "Ellenőrizendő: „2 doboz” = 2 × 100 db? A válaszlevél rákérdez."
+        }
+      ],
+      "approve": "Jóváhagyás és küldés",
+      "edit": "Szerkesztés"
+    }
+  },
+  "control": {
+    "eyebrow": "Ön marad az irányításnál",
+    "title": "Ellenőrzött automatizálás, nem fekete doboz",
+    "subtitle": "Nem ígérünk teljesen önálló rendelésfeldolgozást. Az agent előkészít, az ember dönt. Így könnyebb megbízni benne, tesztelni és bevezetni.",
+    "items": [
+      {
+        "title": "Kötelező jóváhagyás",
+        "text": "Semmilyen ajánlat vagy rendelés nem megy ki, és nem rögzül az ERP-ben, amíg egy kolléga jóvá nem hagyja."
+      },
+      {
+        "title": "Látható bizonytalanság",
+        "text": "Az agent jelzi, miben nem biztos, és hogy melyik adatot honnan vette: a levélből, a PDF-ből vagy egy korábbi rendelésből."
+      },
+      {
+        "title": "Teljes napló",
+        "text": "Minden lépés, javítás és jóváhagyás visszakereshető. Látni lehet, ki mit hagyott jóvá és mikor."
+      },
+      {
+        "title": "Mérhető eredmény",
+        "text": "Folyamatosan mérjük a feldolgozási időt, a javítások arányát és a kezelt kérések számát, így az eredmény számokban látszik."
+      }
+    ]
+  },
+  "audience": {
+    "eyebrow": "Kinek szól",
+    "title": "Ott segít, ahol sok az ajánlatkérés és kevés a szabványos formátum",
+    "profileTitle": "Jellemzően ilyen cégeknek",
+    "profile": [
+      "10–100 munkatárs",
+      "2–3 vagy több kolléga foglalkozik ajánlatokkal és rendelésekkel",
+      "közös értékesítési postafiók vagy üzleti chat-fiók, ahová a rendelések érkeznek",
+      "gyakori PDF- és Excel-csatolmányok",
+      "meglévő ERP-, CRM- vagy számlázó rendszer",
+      "nincs saját AI-fejlesztő csapat"
+    ],
+    "sectorsTitle": "Tipikus ágazatok",
+    "sectors": [
+      "Ipari alkatrész-kereskedők",
+      "Villamossági és épületgépészeti nagykereskedések",
+      "Építőanyag-kereskedők",
+      "Gép- és berendezés-forgalmazók",
+      "Csomagolóanyag-gyártók",
+      "Egyedi gyártást végző üzemek"
+    ]
+  },
+  "integrations": {
+    "eyebrow": "Integrációk",
+    "title": "A meglévő rendszereire épül, nem kell semmit lecserélni",
+    "subtitle": "Ahol van API, azon keresztül kapcsolódunk. Ahol nincs, ott adatbázis-hozzáféréssel vagy export–import megoldással indulunk.",
+    "items": [
+      {
+        "title": "E-mail",
+        "text": "Microsoft 365 / Outlook, Google Workspace / Gmail, egyéb IMAP-postafiókok"
+      },
+      {
+        "title": "Chat",
+        "text": "WhatsApp Business, Facebook Messenger, Viber Business – a cég hivatalos üzleti fiókján keresztül"
+      },
+      {
+        "title": "ERP és számlázás",
+        "text": "Gyakori kkv-s ERP-k és egyedi rendszerek API-n, adatbázison vagy exporton keresztül"
+      },
+      {
+        "title": "CRM",
+        "text": "Ügyféltörzs, kapcsolattartók, korábbi ajánlatok és rendelések"
+      },
+      {
+        "title": "Dokumentumok",
+        "text": "PDF, szkennelt rendelés, Excel és CSV, kézzel írt lista fotója, műszaki rajzok"
+      }
+    ]
+  },
+  "pilot": {
+    "eyebrow": "Indulás",
+    "title": "30 napos pilot egy postafiókkal, egy folyamattal",
+    "subtitle": "Nem nyitott végű tanácsadás. Egy jól körülhatárolt pilot, előre rögzített sikerkritériumokkal, valós leveleken.",
+    "includesTitle": "Mit tartalmaz",
+    "includes": [
+      "A jelenlegi folyamat felmérése és alapmérés: mennyi idő ma egy ajánlat",
+      "Egy postafiók és egy folyamat (ajánlatkérés vagy rendelés) automatizálása",
+      "Kapcsolat a termékkatalógussal és az ERP-vel, első körben csak olvasási joggal",
+      "Jóváhagyási felület a kollégák számára",
+      "Heti egyeztetés és záró jelentés mért eredményekkel"
+    ],
+    "targetsTitle": "Célértékek, amelyeket közösen rögzítünk",
+    "targets": [
+      {
+        "value": "−50%",
+        "label": "feldolgozási idő az első válaszig"
+      },
+      {
+        "value": "85–90%",
+        "label": "pontos strukturált adat a szokásos kéréseknél"
+      },
+      {
+        "value": "0",
+        "label": "jóváhagyás nélkül kiküldött ajánlat vagy rendelés"
+      },
+      {
+        "value": "100%",
+        "label": "naplózott lépés, teljes visszakereshetőség"
+      }
+    ],
+    "note": "A célértékek a pilot előtt elvégzett alapmérésből indulnak, és a pilot végén ugyanígy mérjük őket.",
+    "cta": "Kérjen ajánlatot a pilotra"
+  },
+  "security": {
+    "eyebrow": "Adatbiztonság",
+    "title": "Az Ön adatai az Ön adatai maradnak",
+    "items": [
+      {
+        "title": "EU-s adatkezelés, GDPR",
+        "text": "Az adatokat az Európai Unióban tároljuk, a GDPR szerint kezeljük, és adatfeldolgozási szerződést kötünk."
+      },
+      {
+        "title": "Nem tanítunk vele modellt",
+        "text": "Az Ön leveleit és dokumentumait nem használjuk, és az általunk használt AI-szolgáltatók sem használják fel modellek tanítására."
+      },
+      {
+        "title": "Legkisebb jogosultság",
+        "text": "Az agent csak azokat a postafiókokat és rendszereket éri el, amelyekre a feladathoz szükség van. Az ERP-be írás külön jóváhagyott lépés."
+      },
+      {
+        "title": "Emberi felügyelet",
+        "text": "A jóváhagyásos működés és a teljes napló az EU AI Act emberi felügyeletre vonatkozó elveit követi."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "GYIK",
+    "title": "Gyakori kérdések",
+    "items": [
+      {
+        "q": "Le kell cserélnünk a meglévő rendszereinket?",
+        "a": "Nem. Az agent a meglévő postafiókjához, katalógusához, CRM-jéhez és ERP-jéhez kapcsolódik. Régebbi, API nélküli rendszereknél adatbázis-hozzáféréssel vagy export–import megoldással indulunk."
+      },
+      {
+        "q": "Mi történik, ha az AI hibázik?",
+        "a": "Semmi nem megy ki és semmi nem rögzül jóváhagyás nélkül. Az agent jelzi, miben bizonytalan, a kolléga pedig javíthat. A javításokat mérjük, és ezek alapján finomítjuk a működést."
+      },
+      {
+        "q": "Kezeli a cikkszám nélküli, szabad szöveges kéréseket is?",
+        "a": "Igen, ez a fő erőssége. A termékleírást, az ügyfél saját elnevezéseit és a korábbi rendeléseket is felhasználja a megfelelő termék azonosításához. Ahol nem biztos, ott rákérdez."
+      },
+      {
+        "q": "Kezeli a chaten érkező rendeléseket is?",
+        "a": "Igen, ha a rendelés a cég hivatalos üzleti fiókjára érkezik (WhatsApp Business, Facebook Messenger, Viber Business). A szöveget és a fotón küldött listákat ugyanúgy feldolgozza, mint az e-maileket, és a válasz is ugyanabban a csatornában megy vissza, jóváhagyás után. Munkatársak személyes telefonján folyó beszélgetésekhez nem kapcsolódunk; ezeket érdemes egy közös üzleti fiókba terelni."
+      },
+      {
+        "q": "Milyen nyelvű leveleket tud feldolgozni?",
+        "a": "Magyar és angol nyelvű leveleket, és igény szerint német nyelvűeket is. A válaszlevél piszkozata az ügyfél nyelvén készül."
+      },
+      {
+        "q": "Mennyi idő a bevezetés?",
+        "a": "A pilot 30 nap egy postafiókkal és egy folyamattal. A sikeres pilot után bővítjük további folyamatokra, és bekapcsoljuk az ERP-be írást."
+      },
+      {
+        "q": "Mennyibe kerül?",
+        "a": "Minden cégnél mások a rendszerek és a mennyiségek, ezért rövid felmérés után egyedi, fix árú ajánlatot adunk a pilotra."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Ajánlatkérés",
+    "title": "Nézzük meg, mennyi időt nyerhet vele",
+    "subtitle": "Írja le röviden, hogyan dolgozzák fel ma az ajánlatkéréseket. Egy munkanapon belül jelentkezünk, és egyeztetünk egy rövid megbeszélést.",
+    "direct": "Inkább e-mailt írna?",
+    "name": "Név",
+    "email": "Munkahelyi e-mail",
+    "company": "Cégnév",
+    "phone": "Telefon",
+    "size": "Cégméret",
+    "sizes": {
+      "s": "1–9 fő",
+      "m": "10–49 fő",
+      "l": "50–99 fő",
+      "xl": "100 fő felett"
+    },
+    "volume": "Havi ajánlatkérések és rendelések",
+    "volumes": {
+      "unknown": "Nem tudom",
+      "lt50": "50 alatt",
+      "50-200": "50–200",
+      "200-1000": "200–1000",
+      "gt1000": "1000 felett"
+    },
+    "systems": "Használt rendszerek",
+    "systemsPlaceholder": "pl. Outlook, WhatsApp Business, SAP Business One, saját ERP, Excel…",
+    "message": "Üzenet",
+    "messagePlaceholder": "Hogyan dolgozzák fel ma az ajánlatkéréseket? Mi a legnagyobb gond?",
+    "consent": "Hozzájárulok, hogy a megadott adataimat az ajánlatkérés megválaszolásához kezeljék.",
+    "submit": "Ajánlatkérés küldése",
+    "sending": "Küldés…",
+    "success": "Köszönjük! Megkaptuk az ajánlatkérését, és egy munkanapon belül jelentkezünk.",
+    "error": "Nem sikerült elküldeni. Kérjük, próbálja újra, vagy írjon nekünk e-mailt."
+  },
+  "footer": {
+    "tagline": "AI-alapú ajánlat- és rendelésfeldolgozás ipari disztribútoroknak és gyártóknak.",
+    "partOf": "A Bune Automation szakterülete",
+    "privacy": "Adatvédelem",
+    "terms": "Felhasználási feltételek",
+    "imprint": "Impresszum",
+    "rights": "Minden jog fenntartva."
+  },
+  "legal": {
+    "back": "Vissza a főoldalra",
+    "updated": "Utolsó frissítés"
+  }
+}
