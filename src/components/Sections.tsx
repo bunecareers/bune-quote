@@ -1,4 +1,5 @@
 import type { Locale } from "@/i18n/config";
+import { FlowIllustration, IntegrationIcon, ProblemIcon, WarehouseIllustration } from "@/components/Illustrations";
 import type { Dictionary } from "@/i18n/dictionaries";
 import { company } from "@/lib/company";
 import { Alert, Check, Logo, Section, SectionHeading, buttonPrimary, buttonSecondary } from "./ui";
@@ -88,8 +89,9 @@ export function Problem({ dict }: Props) {
     <Section id="problem" className="bg-surface-2/60">
       <SectionHeading eyebrow={t.eyebrow} title={t.title} subtitle={t.subtitle} />
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        {t.items.map((item) => (
+        {t.items.map((item, i) => (
           <div key={item.title} className="rounded-2xl border border-line bg-surface p-6">
+            <ProblemIcon index={i} className="mb-4" />
             <h3 className="font-semibold">{item.title}</h3>
             <p className="mt-2 text-sm leading-relaxed text-muted">{item.text}</p>
           </div>
@@ -104,6 +106,9 @@ export function How({ dict }: Props) {
   return (
     <Section id="how">
       <SectionHeading eyebrow={t.eyebrow} title={t.title} subtitle={t.subtitle} />
+      <div className="mb-14 rounded-3xl border border-line bg-surface-2/60 px-4 py-6 sm:px-10 sm:py-8">
+        <FlowIllustration />
+      </div>
       <ol className="grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
         {t.steps.map((s, i) => (
           <li key={s.title} className="relative border-t border-line pt-6">
@@ -250,6 +255,7 @@ export function Audience({ dict }: Props) {
               </li>
             ))}
           </ul>
+          <WarehouseIllustration className="mt-8" />
         </div>
       </div>
     </Section>
@@ -262,8 +268,9 @@ export function Integrations({ dict }: Props) {
     <Section id="integrations">
       <SectionHeading eyebrow={t.eyebrow} title={t.title} subtitle={t.subtitle} />
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
-        {t.items.map((item) => (
+        {t.items.map((item, i) => (
           <div key={item.title} className="rounded-2xl border border-line bg-surface p-6">
+            <IntegrationIcon index={i} className="mb-4" />
             <h3 className="font-semibold">{item.title}</h3>
             <p className="mt-2 text-sm leading-relaxed text-muted">{item.text}</p>
           </div>

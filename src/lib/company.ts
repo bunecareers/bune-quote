@@ -4,7 +4,7 @@ export const company = {
   brand: "Bune Quote",
   parentBrand: "Bune Automation",
   parentUrl: "https://www.buneautomation.com",
-  domain: "bunequote.com",
+  domain: "quote.buneautomation.com",
   legalName: "Bune AI Solutions Ltd.",
   seat: "19 Eastburn Road, Kintore, AB51 0FG, UK",
   registryNumber: "SC873356",

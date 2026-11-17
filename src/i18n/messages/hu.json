@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Bune Quote – AI-alapú ajánlat- és rendelésfeldolgozás disztribútoroknak",
-    "description": "Az ügyfél e-mailjétől a pontos árajánlatig: AI agent, amely feldolgozza az ajánlatkéréseket és rendeléseket, egyezteti a katalógussal és az ERP-vel, majd jóváhagyásra előkészíti. A Bune Automation szakterülete."
+    "description": "Az ügyfél e-mailjétől a pontos árajánlatig: AI agent, amely feldolgozza az ajánlatkéréseket és rendeléseket, egyezteti a katalógussal és az ERP-vel, majd jóváhagyásra előkészíti. A Bune Ecosystem része."
   },
   "nav": {
     "how": "Hogyan működik",
@@ -12,7 +12,7 @@
     "language": "Nyelv"
   },
   "brand": {
-    "by": "a Bune Automation szakterülete"
+    "by": "a Bune Ecosystem része"
   },
   "hero": {
     "eyebrow": "Ipari disztribútoroknak és gyártóknak",
@@ -358,7 +358,7 @@
   },
   "footer": {
     "tagline": "AI-alapú ajánlat- és rendelésfeldolgozás ipari disztribútoroknak és gyártóknak.",
-    "partOf": "A Bune Automation szakterülete",
+    "partOf": "A Bune Ecosystem része",
     "privacy": "Adatvédelem",
     "terms": "Felhasználási feltételek",
     "imprint": "Impresszum",

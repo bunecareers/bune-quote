@@ -4,7 +4,7 @@ import { localeForCountry, visitorCountry } from "@/lib/geo";
 // Sends "/" to the visitor's language. Every other page has a locale prefix, so
 // the language switcher and direct links always stay on the chosen language.
 // Order: a country with a set language, then the browser's language, then
-// English abroad and the default language when the country is unknown.
+// English (the default language).
 
 function preferredLocale(request: Request): Locale {
   const country = visitorCountry(request);
@@ -21,7 +21,7 @@ function preferredLocale(request: Request): Locale {
     .sort((a, b) => b.q - a.q);
   const match = tags.find((t) => hasLocale(t.lang));
   if (match) return match.lang as Locale;
-  return country ? "en" : defaultLocale;
+  return defaultLocale;
 }
 
 export function GET(request: Request) {

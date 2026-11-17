@@ -20,7 +20,7 @@ export function generateStaticParams() {
 
 export default async function OpenGraphImage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
-  const dict = await getDictionary(hasLocale(lang) ? lang : "hu");
+  const dict = await getDictionary(hasLocale(lang) ? lang : "en");
   const fonts = join(process.cwd(), "src/assets/fonts");
   const [fraunces, inter] = await Promise.all([
     readFile(join(fonts, "Fraunces-Medium.ttf")),
@@ -62,7 +62,7 @@ export default async function OpenGraphImage({ params }: { params: Promise<{ lan
         </div>
 
         <div style={{ display: "flex", justifyContent: "space-between", fontSize: 24, color: "rgba(241,239,233,0.6)" }}>
-          <span>bunequote.com</span>
+          <span>quote.buneautomation.com</span>
           <span>{dict.footer.partOf}</span>
         </div>
       </div>

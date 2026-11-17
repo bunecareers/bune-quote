@@ -2,7 +2,7 @@ import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries";
 import { company } from "./company";
 
-export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://www.bunequote.com").replace(/\/$/, "");
+export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://quote.buneautomation.com").replace(/\/$/, "");
 
 export const ogLocale: Record<Locale, string> = { hu: "hu_HU", en: "en_GB" };
 

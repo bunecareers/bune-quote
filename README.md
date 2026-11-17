@@ -1,7 +1,7 @@
-# Bune Quote website (bunequote.com)
+# Bune Quote website (quote.buneautomation.com)
 
 Landing page for the AI RFQ and order processing service, a Bune Automation speciality.
-Built on the same stack as buneautomation.com: Next.js 16 + TypeScript + Tailwind CSS on Cloudflare Workers. Hungarian (default) and English.
+Built on the same stack as buneautomation.com: Next.js 16 + TypeScript + Tailwind CSS on Cloudflare Workers. English (default) and Hungarian.
 
 ## Run locally
 
@@ -19,7 +19,7 @@ npm run preview   # build and run locally in the Workers runtime
 npm run deploy    # build and deploy with your own Cloudflare login
 ```
 
-The Worker is named `bune-quote` (see `wrangler.jsonc`). Set `NEXT_PUBLIC_SITE_URL=https://www.bunequote.com` as a build variable and `LEAD_NOTIFY_EMAIL` as a Worker secret. Then add `bunequote.com` as a custom domain of the Worker.
+The Worker is named `bune-quote` (see `wrangler.jsonc`). Set `NEXT_PUBLIC_SITE_URL=https://quote.buneautomation.com` as a build variable and `LEAD_NOTIFY_EMAIL` as a Worker secret. Then add `quote.buneautomation.com` as a custom domain of the Worker.
 
 Always use the npm scripts above rather than plain `wrangler dev` or `wrangler deploy`: they also upload the prerendered pages, which the sharing images need.
 
@@ -28,7 +28,7 @@ Always use the npm scripts above rather than plain `wrangler dev` or `wrangler d
 `src/app/api/lead/route.ts` stores every request in Cloudflare D1, then emails a notification to `LEAD_NOTIFY_EMAIL` and a confirmation to the visitor. A failed email never loses a request.
 
 - The D1 database `bune-automation-leads` is **shared with buneautomation.com**. Rows from this site have `kind = 'rfq'` and `"site": "bunequote"` in `payload`.
-- Emails are sent from `MAIL_FROM` (`wrangler.jsonc`), for now `hello@buneautomation.com`, because that domain is already set up for the Cloudflare Email Service. Switch it to a `bunequote.com` address once that domain is onboarded.
+- Emails are sent from `MAIL_FROM` (`wrangler.jsonc`), for now `hello@buneautomation.com`, which is already set up for the Cloudflare Email Service.
 - Local table: `npm run db:migrate:local`
 
 List this site's requests:

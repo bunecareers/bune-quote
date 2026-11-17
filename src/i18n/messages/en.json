@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Bune Quote – AI quote and order processing for distributors",
-    "description": "From customer email to accurate quote: an AI agent that processes RFQs and purchase orders, checks them against your catalogue and ERP, and prepares them for approval. A Bune Automation speciality."
+    "description": "From customer email to accurate quote: an AI agent that processes RFQs and purchase orders, checks them against your catalogue and ERP, and prepares them for approval. Part of the Bune Ecosystem."
   },
   "nav": {
     "how": "How it works",
@@ -12,7 +12,7 @@
     "language": "Language"
   },
   "brand": {
-    "by": "a Bune Automation speciality"
+    "by": "part of the Bune Ecosystem"
   },
   "hero": {
     "eyebrow": "For industrial distributors and manufacturers",
@@ -358,7 +358,7 @@
   },
   "footer": {
     "tagline": "AI quote and order processing for industrial distributors and manufacturers.",
-    "partOf": "A Bune Automation speciality",
+    "partOf": "Part of the Bune Ecosystem",
     "privacy": "Privacy",
     "terms": "Terms",
     "imprint": "Imprint",
