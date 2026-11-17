@@ -40,7 +40,21 @@ export function Hero({ dict }: Props) {
             ))}
           </ul>
         </div>
-        <HeroCard dict={dict} />
+        <div className="relative">
+          {/* Photo: CHUTTERSNAP on Unsplash (Unsplash License). Decorative, so empty alt. */}
+          {/* eslint-disable-next-line @next/next/no-img-element -- static file, no image optimiser on Workers */}
+          <img
+            src="/hero-warehouse.jpg"
+            alt=""
+            width={1600}
+            height={1065}
+            fetchPriority="high"
+            className="aspect-[16/10] w-full rounded-3xl object-cover shadow-[0_24px_60px_-30px_rgba(20,22,28,0.45)] lg:aspect-[4/5]"
+          />
+          <div className="relative mx-3 -mt-16 sm:mx-8 lg:absolute lg:-bottom-10 lg:-left-12 lg:m-0 lg:w-[88%]">
+            <HeroCard dict={dict} />
+          </div>
+        </div>
       </div>
     </section>
   );

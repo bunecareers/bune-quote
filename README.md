@@ -48,3 +48,7 @@ npx wrangler d1 execute bune-automation-leads --remote --command "SELECT created
 | Company details, contact email | `src/lib/company.ts` |
 | Legal texts (drafts, need legal review) | `src/content/legal.ts` |
 | Colours | `src/app/globals.css` |
+
+## Image credits
+
+- `public/hero-warehouse.jpg`: photo by CHUTTERSNAP on Unsplash (https://unsplash.com/photos/BNBA1h-NgdY), Unsplash License.
