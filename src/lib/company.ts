@@ -11,8 +11,8 @@ export const company = {
   registeredIn: { hu: "Skócia, Egyesült Királyság", en: "Scotland, United Kingdom" },
   representative: "Viktor Simon",
   // Shown on the page as the direct contact address.
-  email: "support@bune.careers",
-  privacyEmail: "support@bune.careers",
+  email: "support@bune.business",
+  privacyEmail: "support@bune.business",
   phone: "+44 7732 115326",
   host: {
     name: "Cloudflare, Inc.",
