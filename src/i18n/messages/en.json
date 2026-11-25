@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Bune Quote – AI quote and order processing for distributors",
-    "description": "From customer email to accurate quote: an AI agent that processes RFQs and purchase orders, checks them against your catalogue and ERP, and prepares them for approval. Part of the Bune Ecosystem."
+    "description": "From customer email to accurate quote: an AI agent that processes RFQs and purchase orders, checks them against your catalog and ERP, and prepares them for approval. Part of the Bune Ecosystem."
   },
   "nav": {
     "how": "How it works",
@@ -18,7 +18,7 @@
     "eyebrow": "For industrial distributors and manufacturers",
     "title": "From customer email to accurate quote.",
     "titleAccent": "In minutes, with your approval.",
-    "subtitle": "Our AI agent reads incoming RFQs and purchase orders, whether they arrive by email or chat (WhatsApp, Messenger, Viber), including attached PDFs, photos and spreadsheets. It checks them against your product catalogue and ERP and puts a ready quote draft in front of your team. You review, approve, and the system sends.",
+    "subtitle": "Our AI agent reads incoming RFQs and purchase orders, including attached PDFs, photos and spreadsheets. It checks them against your product catalog and ERP and puts a ready quote draft in front of your team. You review, approve, and the system sends.",
     "ctaPrimary": "Request an offer",
     "ctaSecondary": "See an example",
     "points": [
@@ -29,12 +29,12 @@
     "card": {
       "inbox": "Sales inbox",
       "new": "New RFQ",
-      "from": "Example Engineering Ltd.",
+      "from": "Example Industrial Inc.",
       "subject": "Quote – bearings, bolts",
       "steps": [
-        "Recognised: request for quote",
+        "Recognized: request for quote",
         "3 line items extracted from email and PDF",
-        "Checked against catalogue and stock",
+        "Checked against catalog and stock",
         "1 question flagged for review"
       ],
       "ready": "Quote draft ready",
@@ -44,7 +44,7 @@
   "problem": {
     "eyebrow": "The problem",
     "title": "Processing quote requests by hand costs time, money and orders",
-    "subtitle": "Incoming requests are never uniform: free text, scanned purchase orders, spreadsheets, a chat photo of a handwritten list, product descriptions instead of part numbers. So most of the work is still manual.",
+    "subtitle": "Incoming requests are never uniform: free text, scanned purchase orders, spreadsheets, a phone photo of a handwritten list, product descriptions instead of part numbers. So most of the work is still manual.",
     "items": [
       {
         "title": "Slow replies",
@@ -59,7 +59,7 @@
         "text": "A mistyped quantity or a wrong part number means complaints, returns and unhappy customers."
       },
       {
-        "title": "Missed enquiries",
+        "title": "Missed inquiries",
         "text": "In a busy shared inbox it is easy to overlook a request, and nobody measures it."
       }
     ]
@@ -71,7 +71,7 @@
     "steps": [
       {
         "title": "Watches your channels",
-        "text": "Your shared inbox and, on request, your company's business chat accounts. It recognises whether a message is an RFQ, a purchase order, a complaint or a general question."
+        "text": "Your shared inbox and, on request, your company's business chat accounts. It recognizes whether a message is an RFQ, a purchase order, a complaint or a general question."
       },
       {
         "title": "Reads the attachments",
@@ -79,7 +79,7 @@
       },
       {
         "title": "Checks your systems",
-        "text": "Finds the products in your catalogue and checks prices, stock and the customer's previous orders in your CRM and ERP."
+        "text": "Finds the products in your catalog and checks prices, stock and the customer's previous orders in your CRM and ERP."
       },
       {
         "title": "Flags open questions",
@@ -102,15 +102,15 @@
     "note": "Illustrative example with fictional company and product data.",
     "email": {
       "label": "Incoming email",
-      "from": "Peter Smith · Example Engineering Ltd.",
+      "from": "Peter Smith · Example Industrial Inc.",
       "subject": "quote pls",
-      "body": "Hi,\n\nCould you quote the following:\n– 40 pcs 6205 2RS bearing\n– 2 boxes M10x40 socket head screws, stainless\n– 25 more of the seals from last time\n\nNeed them by Thursday, usual site.\nDrawing of the seal attached.\n\nThanks, Peter",
-      "attachment": "seal_drawing.pdf"
+      "body": "Hi,\n\nCould you quote the following:\n– 40 ea 6205 2RS bearing\n– 2 boxes 3/8-16 x 1-1/2 socket head cap screws, stainless\n– 25 more of the o-rings from last time\n\nNeed them by Thursday, usual ship-to.\nDrawing of the seal groove attached.\n\nThanks, Peter",
+      "attachment": "seal_groove.pdf"
     },
     "draft": {
       "label": "Quote draft",
       "status": "Awaiting approval",
-      "customer": "Example Engineering Ltd. · deliver to: Leeds site (customer record)",
+      "customer": "Example Industrial Inc. · ship to: Dayton, OH plant (customer record)",
       "columns": [
         "Item",
         "Part no.",
@@ -120,24 +120,24 @@
       "rows": [
         {
           "item": "Deep groove ball bearing 6205-2RS",
-          "sku": "CS-6205-2RS",
-          "qty": "40 pcs",
-          "price": "€6.20",
+          "sku": "BRG-6205-2RS",
+          "qty": "40 ea",
+          "price": "$6.80",
           "source": "email"
         },
         {
-          "item": "Socket head screw DIN 912 M10×40 A2",
-          "sku": "CSV-912-1040-A2",
+          "item": "Socket head cap screw 3/8-16 × 1-1/2, 18-8 SS",
+          "sku": "SHCS-3816-112-SS",
           "qty": "2 boxes",
-          "price": "€47.50",
+          "price": "$52.00",
           "source": "email",
           "flag": true
         },
         {
-          "item": "O-ring 45×3 NBR",
-          "sku": "OG-4503-NBR",
-          "qty": "25 pcs",
-          "price": "€0.95",
+          "item": "O-ring AS568-228, Buna-N",
+          "sku": "OR-228-BN",
+          "qty": "25 ea",
+          "price": "$1.05",
           "source": "previous order + PDF"
         }
       ],
@@ -149,11 +149,11 @@
         },
         {
           "ok": true,
-          "text": "\"Seals from last time\" matched to the September order; the drawing agrees"
+          "text": "\"O-rings from last time\" matched to the September order; the drawing agrees"
         },
         {
           "ok": false,
-          "text": "To confirm: \"2 boxes\" = 2 × 100 pcs? The reply asks the customer."
+          "text": "To confirm: \"2 boxes\" = 2 × 50 ea? The reply asks the customer."
         }
       ],
       "approve": "Approve and send",
@@ -190,7 +190,7 @@
     "profile": [
       "10–100 employees",
       "two or three or more people handling quotes and orders",
-      "a shared sales inbox or business chat account where orders arrive",
+      "a shared sales inbox where quote requests and orders arrive",
       "frequent PDF and spreadsheet attachments",
       "an existing ERP, CRM or accounting system",
       "no in-house AI engineering team"
@@ -215,7 +215,7 @@
         "text": "Microsoft 365 / Outlook, Google Workspace / Gmail, other IMAP mailboxes"
       },
       {
-        "title": "Chat",
+        "title": "Chat (optional)",
         "text": "WhatsApp Business, Facebook Messenger, Viber Business, through your company's official business account"
       },
       {
@@ -240,11 +240,11 @@
     "includes": [
       "A review of your current process and a baseline: how long a quote takes today",
       "Automation of one inbox and one workflow (RFQs or purchase orders)",
-      "Connection to your product catalogue and ERP, read-only at first",
+      "Connection to your product catalog and ERP, read-only at first",
       "An approval screen for your team",
       "Weekly check-ins and a final report with measured results"
     ],
-    "targetsTitle": "Targets we agree together",
+    "targetsTitle": "Pilot targets we agree up front",
     "targets": [
       {
         "value": "−50%",
@@ -263,7 +263,7 @@
         "label": "steps logged, fully traceable"
       }
     ],
-    "note": "Targets start from the baseline measured before the pilot and are measured the same way at the end.",
+    "note": "These are targets, not past results. Each one starts from a baseline measured on your own requests before the pilot and is measured the same way at the end.",
     "cta": "Request a pilot offer"
   },
   "security": {
@@ -271,8 +271,8 @@
     "title": "Your data stays yours",
     "items": [
       {
-        "title": "EU data handling, GDPR",
-        "text": "Data is stored in the European Union, handled under the GDPR, and covered by a data processing agreement."
+        "title": "Strict data protection",
+        "text": "We handle your data under the GDPR, one of the strictest privacy standards, and sign a data processing agreement with you. Data is stored in the European Union."
       },
       {
         "title": "No model training",
@@ -284,7 +284,7 @@
       },
       {
         "title": "Human oversight",
-        "text": "Approval-based operation and a full audit trail follow the human oversight principles of the EU AI Act."
+        "text": "Approval-based operation and a full audit trail: a person on your team stays accountable for every quote and order."
       }
     ]
   },
@@ -294,7 +294,7 @@
     "items": [
       {
         "q": "Do we need to replace our existing systems?",
-        "a": "No. The agent connects to your existing inbox, catalogue, CRM and ERP. For older systems without an API, we start with database access or an export and import route."
+        "a": "No. The agent connects to your existing inbox, catalog, CRM and ERP. For older systems without an API, we start with database access or an export and import route."
       },
       {
         "q": "What happens if the AI makes a mistake?",
@@ -325,7 +325,7 @@
   "contact": {
     "eyebrow": "Request an offer",
     "title": "Let's see how much time it could save you",
-    "subtitle": "Tell us briefly how you handle quote requests today. We will get back to you within one business day to arrange a short call.",
+    "subtitle": "Tell us briefly how you handle quote requests today. We reply by email within one business day with a first assessment. No call needed unless you want one.",
     "direct": "Prefer email?",
     "name": "Name",
     "email": "Work email",
@@ -347,7 +347,7 @@
       "gt1000": "Over 1,000"
     },
     "systems": "Systems you use",
-    "systemsPlaceholder": "e.g. Outlook, WhatsApp Business, SAP Business One, in-house ERP, Excel…",
+    "systemsPlaceholder": "e.g. Outlook, Epicor Prophet 21, Infor SX.e, in-house ERP, Excel…",
     "message": "Message",
     "messagePlaceholder": "How do you handle quote requests today? What is the biggest pain?",
     "consent": "I agree to my data being processed to respond to this request.",

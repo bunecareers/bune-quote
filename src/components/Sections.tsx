@@ -141,7 +141,7 @@ export function Example({ dict }: Props) {
       <SectionHeading eyebrow={t.eyebrow} title={t.title} subtitle={t.subtitle} />
       <div className="grid items-start gap-6 lg:grid-cols-[0.85fr_auto_1.15fr]">
         {/* Incoming email */}
-        <div className="rounded-3xl border border-line bg-surface p-6">
+        <div className="min-w-0 rounded-3xl border border-line bg-surface p-6">
           <p className="text-xs font-medium tracking-wide text-muted uppercase">{t.email.label}</p>
           <p className="mt-4 text-sm font-medium">{t.email.from}</p>
           <p className="text-sm text-muted">{t.email.subject}</p>
@@ -159,7 +159,7 @@ export function Example({ dict }: Props) {
         </div>
 
         {/* Draft quote */}
-        <div className="rounded-3xl border border-accent/40 bg-surface p-6 shadow-[0_24px_60px_-34px_rgba(194,65,12,0.45)]">
+        <div className="min-w-0 rounded-3xl border border-accent/40 bg-surface p-6 shadow-[0_24px_60px_-34px_rgba(194,65,12,0.45)]">
           <div className="flex flex-wrap items-center justify-between gap-2">
             <p className="text-xs font-medium tracking-wide text-muted uppercase">{d.label}</p>
             <span className="rounded-full bg-accent-soft px-2.5 py-1 text-xs font-medium text-accent">{d.status}</span>
