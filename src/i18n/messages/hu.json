@@ -288,6 +288,27 @@
       }
     ]
   },
+  "about": {
+    "eyebrow": "Rólunk",
+    "title": "Akik az eredményért felelnek",
+    "text": "A Bune Quote mögött a Bune AI Solutions Ltd. áll, Skóciában bejegyzett brit cég. Abban segítünk a kereskedő cégeknek, hogy az AI ne kísérlet maradjon, hanem mérhető eredményt hozó, biztonságosan működő megoldás legyen. Nálunk azok tartják Önnel a kapcsolatot, akik a pilotot tervezik és felelnek érte.",
+    "people": [
+      {
+        "id": "viktor-simon",
+        "name": "Simon Viktor",
+        "role": "CEO",
+        "linkedin": "https://www.linkedin.com/in/viktorsp/"
+      },
+      {
+        "id": "laszlo-nyakas",
+        "name": "Nyakas László",
+        "role": "Szoftverfejlesztési igazgató",
+        "linkedin": "https://www.linkedin.com/in/laszlo-nyakas-4b75833/"
+      }
+    ],
+    "photoAlt": "{name} portréja",
+    "linkedin": "{name} LinkedIn-profilja"
+  },
   "faq": {
     "eyebrow": "GYIK",
     "title": "Gyakori kérdések",

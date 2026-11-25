@@ -14,6 +14,7 @@ import {
   How,
   Integrations,
   Pilot,
+  About,
   Problem,
   Security,
 } from "@/components/Sections";
@@ -40,6 +41,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         <Integrations dict={dict} />
         <Pilot dict={dict} />
         <Security dict={dict} />
+        <About dict={dict} />
         <Faq dict={dict} />
         <Section id="contact" className="bg-surface-2/60">
           <div className="mx-auto max-w-3xl">

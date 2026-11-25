@@ -351,6 +351,51 @@ export function Security({ dict }: Props) {
   );
 }
 
+export function About({ dict }: Props) {
+  const t = dict.about;
+  return (
+    <Section id="about" className="bg-surface-2/60">
+      <div className="grid gap-10 lg:grid-cols-[1fr_1.3fr] lg:items-center">
+        <SectionHeading eyebrow={t.eyebrow} title={t.title} subtitle={t.text} />
+        <ul className="grid gap-5 sm:grid-cols-2">
+          {t.people.map((p) => (
+            <li key={p.id}>
+              <div className="relative aspect-[4/5] overflow-hidden rounded-3xl bg-surface-2">
+                {/* eslint-disable-next-line @next/next/no-img-element -- static file, no image optimiser on Workers */}
+                <img
+                  src={`/team/${p.id}.webp`}
+                  alt={t.photoAlt.replace("{name}", p.name)}
+                  loading="lazy"
+                  decoding="async"
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
+              </div>
+              <div className="mt-4 flex items-start justify-between gap-3">
+                <div>
+                  <p className="font-semibold">{p.name}</p>
+                  <p className="text-sm text-muted">{p.role}</p>
+                </div>
+                <a
+                  href={p.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={t.linkedin.replace("{name}", p.name)}
+                  title={t.linkedin.replace("{name}", p.name)}
+                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-line text-muted transition hover:border-accent hover:text-accent"
+                >
+                  <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor" aria-hidden="true">
+                    <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.8v1.5h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1v5.45h-4v-4.83c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.91h-3.95v-11Z" />
+                  </svg>
+                </a>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </Section>
+  );
+}
+
 export function Faq({ dict }: Props) {
   const t = dict.faq;
   return (

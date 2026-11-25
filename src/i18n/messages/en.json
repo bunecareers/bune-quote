@@ -288,6 +288,27 @@
       }
     ]
   },
+  "about": {
+    "eyebrow": "About us",
+    "title": "The people accountable for your results",
+    "text": "Bune Quote is built by Bune AI Solutions Ltd., a UK company registered in Scotland. We help distributors move AI beyond experiments to tools that run safely and deliver measurable results. You work directly with the people who design your pilot and are responsible for it.",
+    "people": [
+      {
+        "id": "viktor-simon",
+        "name": "Viktor Simon",
+        "role": "CEO",
+        "linkedin": "https://www.linkedin.com/in/viktorsp/"
+      },
+      {
+        "id": "laszlo-nyakas",
+        "name": "Laszlo Nyakas",
+        "role": "Director of Software Engineering",
+        "linkedin": "https://www.linkedin.com/in/laszlo-nyakas-4b75833/"
+      }
+    ],
+    "photoAlt": "Portrait of {name}",
+    "linkedin": "{name} on LinkedIn"
+  },
   "faq": {
     "eyebrow": "FAQ",
     "title": "Frequently asked questions",
